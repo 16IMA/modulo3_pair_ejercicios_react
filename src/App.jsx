@@ -19,7 +19,7 @@ function App() {
         </section>
 
         <section>
-          <button className="dice">Lanzar Dado</button>
+          <button className="dice">Lanzar dado</button>
           <div className="game-status">En curso</div>
         </section>
 
