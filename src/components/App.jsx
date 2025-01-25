@@ -1,11 +1,27 @@
+//Imports:
 import Header from './Header';
 import Board from './Board';
 import '../styles/App.scss';
+import { useState } from 'react';
 
+
+//Function:
 
 function App() {
+ 
+  //Variables de estado:
+
+  const [grogu, setGrogu] = useState('');
+  const [eggs, setEggs] = useState('');
+  const [frogs, setFrogs] = useState('');
+  const [cookies, setCookies] = useState('');
+  const [dieResult, setDieResult] = useState('');
+  const [gameStatus, setGameStatus] = useState('');
+
+
   return (
-    <div>
+
+  <>
     <Header />
     <main className="page">
       <Board />  
@@ -33,7 +49,7 @@ function App() {
         <button className="restart-button">Reiniciar juego</button>
       </section>
     </main>
-    </div>
+    </>
   )
 }
 
