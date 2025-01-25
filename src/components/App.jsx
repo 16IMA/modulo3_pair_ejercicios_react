@@ -1,19 +1,14 @@
-import './styles/App.scss'
+import Header from './Header';
+import Board from './Board';
+import '../styles/App.scss';
+
 
 function App() {
   return (
-
+    <div>
+    <Header />
     <main className="page">
-      <section className="board">
-        <div className="cell"><div className="grogu">👣</div></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-        <div className="cell"></div>
-      </section>
-
+      <Board />  
       <section>
         <button className="dice">Lanzar dado</button>
         <div className="game-status">En curso</div>
@@ -23,22 +18,22 @@ function App() {
         <div className="goods-item">🍪</div>
         <div className="goods-item">🍪</div>
         <div className="goods-item">🍪</div>
-      </section>Name
+      </section>Galletas
       <section className="goods-container">
         <div className="goods-item">🥚</div>
         <div className="goods-item">🥚</div>
         <div className="goods-item">🥚</div>
-      </section>Name
+      </section>Huevos
       <section className="goods-container">
         <div className="goods-item">🐸</div>
         <div className="goods-item">🐸</div>
         <div className="goods-item">🐸</div>
-      </section>Name
+      </section>Ranas
       <section>
         <button className="restart-button">Reiniciar juego</button>
       </section>
     </main>
-
+    </div>
   )
 }
 
